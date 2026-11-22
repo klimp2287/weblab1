@@ -18,5 +18,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
             group by c.title 
             """)
     List<CategoryStat> countByCategory();
+
+    //8.2
     List<Product> findByPriceGreaterThanOrderByPriceDesc(BigDecimal price);
 }

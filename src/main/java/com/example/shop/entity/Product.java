@@ -30,6 +30,7 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    //8.1
     @Column(length = 500)
     private String description;
 
@@ -59,6 +60,7 @@ public class Product {
     public Category getCategory() {return category;}
     public void setCategory(Category category) {this.category = category;}
 
+    //8.1
     public String getDescription() {return description;}
     public void setDescription(String description) {this.description = description;}
 }
